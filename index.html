@@ -9,6 +9,33 @@
 </head>
 
 <body>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <a href="#" class="navbar-logo">DFerreira<span>.</span></a>
+
+        <ul class="navbar-links">
+            <li><a href="#about">Sobre</a></li>
+            <li><a href="#projects">Projetos</a></li>
+            <li><a href="#contact">Contato</a></li>
+        </ul>
+
+        <button class="navbar-toggle" aria-label="Menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="navbar-mobile">
+        <ul>
+            <li><a href="#about">Sobre</a></li>
+            <li><a href="#projects">Projetos</a></li>
+            <li><a href="#contact">Contato</a></li>
+        </ul>
+    </div>
+
     <!-- Hero Section -->
     <section class="hero">
         <div class="hero-bg">
@@ -30,20 +57,23 @@
         </div>
 
         <div class="scroll-indicator fade-in delay-4">
-
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 5v14M5 12l7 7 7-7"/>
+            </svg>
         </div>
     </section>
 
     <!-- About Section -->
     <section id="about" class="about">
         <div class="container">
-            <div class="section-header">
+            <div class="section-header reveal">
                 <h2 class="section-title">Sobre Mim</h2>
                 <div class="section-divider"></div>
             </div>
 
             <div class="about-grid">
-                <div class="about-text">
+                <div class="about-text reveal reveal-delay-1">
                     <p>
                         Sou um desenvolvedor front-end apaixonado, focado em criar experiências digitais excepcionais.
                         Com uma base sólida em tecnologias web modernas, transformo ideias em realidade através de
@@ -56,21 +86,21 @@
                 </div>
 
                 <div class="skills">
-                    <div class="skill-card">
+                    <div class="skill-card reveal reveal-delay-2">
                         <div class="skill-icon">
                             <img src="./src/assets/img/html-icon.svg" alt="Ícone HTML" loading="lazy">
                         </div>
                         <span class="skill-name">HTML</span>
                     </div>
 
-                    <div class="skill-card">
+                    <div class="skill-card reveal reveal-delay-3">
                         <div class="skill-icon">
                             <img src="./src/assets/img/css-icon.svg" alt="Ícone CSS" loading="lazy">
                         </div>
                         <span class="skill-name">CSS</span>
                     </div>
 
-                    <div class="skill-card">
+                    <div class="skill-card reveal reveal-delay-4">
                         <div class="skill-icon">
                             <img src="./src/assets/img/js-icon.svg" alt="Ícone JS" loading="lazy">
                         </div>
@@ -84,7 +114,7 @@
     <!-- Projects Section -->
     <section id="projects" class="projects">
         <div class="container">
-            <div class="section-header">
+            <div class="section-header reveal">
                 <h2 class="section-title">Projetos</h2>
                 <div class="section-divider"></div>
             </div>
@@ -92,7 +122,7 @@
             <div class="projects-grid">
 
                 <!-- Project 1 -->
-                <div class="project-card">
+                <div class="project-card reveal reveal-delay-1">
                     <div class="project-image">
                         <img src="./src/assets/img/AgencyWeb.png" alt="Preview do Projeto AgencyWeb" loading="lazy">
                         <div class="project-overlay"></div>
@@ -103,27 +133,26 @@
                         <div class="project-tech">
                             <span class="tech-tag">HTML</span>
                             <span class="tech-tag">CSS</span>
-                            <!-- <span class="tech-tag"></span> -->
                         </div>
                         <div class="project-buttons">
                             <a href="https://dferreiraz.github.io/AgencyWeb/" class="btn btn-primary btn-sm" target="_blank" rel="noopener noreferrer">
                                 Ver Projeto
                             </a>
                             <a href="https://github.com/Dferreiraz/AgencyWeb" class="btn-icon" target="_blank" rel="noopener noreferrer">
-                                <img src="./src/assets/img/symbole-github-azul.png" alt="símbolo do github" loading="lazy">
+                                <img src="./src/assets/img/symbole-github-azul.png" alt="GitHub" loading="lazy" width="20" height="20">
                             </a>
                         </div>
                     </div>
                 </div>
 
                 <!-- Project 2 -->
-                <div class="project-card">
+                <div class="project-card reveal reveal-delay-2">
                     <div class="project-image">
                         <img src="./src/assets/img/LeckTech.png" alt="Preview do Projeto LeckTech" loading="lazy">
                         <div class="project-overlay"></div>
                     </div>
                     <div class="project-content">
-                        <h3 class="project-title">LeckTech Manuntenção</h3>
+                        <h3 class="project-title">LeckTech Manutenção</h3>
                         <p class="project-description">Projeto institucional desenvolvido para empresa de assistência técnica, com foco em presença digital, design moderno, responsividade e experiência do usuário.</p>
                         <div class="project-tech">
                             <span class="tech-tag">HTML</span>
@@ -135,14 +164,14 @@
                                 Ver Projeto
                             </a>
                             <a href="https://github.com/Dferreiraz/LeckTechManutencao" class="btn-icon" target="_blank" rel="noopener noreferrer">
-                                <img src="./src/assets/img/symbole-github-azul.png" alt="símbolo do github" loading="lazy">
+                                <img src="./src/assets/img/symbole-github-azul.png" alt="GitHub" loading="lazy" width="20" height="20">
                             </a>
                         </div>
                     </div>
                 </div>
 
                 <!-- Project 3 -->
-                <div class="project-card">
+                <div class="project-card reveal reveal-delay-3">
                     <div class="project-image">
                         <img src="./src/assets/img/Performa.png" alt="Preview do Projeto Performa" loading="lazy">
                         <div class="project-overlay"></div>
@@ -150,7 +179,6 @@
                     <div class="project-content">
                         <h3 class="project-title">Performa</h3>
                         <p class="project-description">Projeto institucional desenvolvido para empresa do segmento automotivo, focado em apresentação profissional, identidade visual moderna e responsividade.</p>
-                        
                         <div class="project-tech">
                             <span class="tech-tag">HTML</span>
                             <span class="tech-tag">CSS</span>
@@ -160,87 +188,12 @@
                             <a href="https://dferreiraz.github.io/PerformaParabrisas/" class="btn btn-primary btn-sm" target="_blank" rel="noopener noreferrer">
                                 Ver Projeto
                             </a>
-                           <a href="https://github.com/Dferreiraz/PerformaParabrisas" class="btn-icon" target="_blank" rel="noopener noreferrer">
-                                <img src="./src/assets/img/symbole-github-azul.png" alt="símbolo do github" loading="lazy">
+                            <a href="https://github.com/Dferreiraz/PerformaParabrisas" class="btn-icon" target="_blank" rel="noopener noreferrer">
+                                <img src="./src/assets/img/symbole-github-azul.png" alt="GitHub" loading="lazy" width="20" height="20">
                             </a>
                         </div>
                     </div>
                 </div>
-
-                <!-- Project 4 
-                <div class="project-card">
-                    <div class="project-image">
-                        <img src="" alt="">
-                        <div class="project-overlay"></div>
-                    </div>
-                    <div class="project-content">
-                        <h3 class="project-title">Nome do Projeto</h3>
-                        <p class="project-description">Descrição curta do projeto</p>
-                        <div class="project-tech">
-                            <span class="tech-tag"></span>
-                            <span class="tech-tag"></span>
-                            <span class="tech-tag"></span>
-                        </div>
-                        <div class="project-buttons">
-                            <a href="#" class="btn btn-primary btn-sm">
-                                Ver Projeto
-                            </a>
-                            <a href="#" class="btn-icon">
-                                <img src="./src/assets/img/symbole-github-azul.png" alt="">
-                            </a>
-                        </div>
-                    </div>
-                </div> -->
-
-                  <!-- Project 5 
-                <div class="project-card">
-                    <div class="project-image">
-                        <img src="" alt="">
-                        <div class="project-overlay"></div>
-                    </div>
-                    <div class="project-content">
-                        <h3 class="project-title">Nome do Projeto</h3>
-                        <p class="project-description">Descrição curta do projeto</p>
-                        <div class="project-tech">
-                            <span class="tech-tag"></span>
-                            <span class="tech-tag"></span>
-                            <span class="tech-tag"></span>
-                        </div>
-                        <div class="project-buttons">
-                            <a href="#" class="btn btn-primary btn-sm">
-                                Ver Projeto
-                            </a>
-                            <a href="#" class="btn-icon">
-                                <img src="./src/assets/img/symbole-github-azul.png" alt="">
-                            </a>
-                        </div>
-                    </div>
-                </div> -->
-
-                  <!-- Project 6
-                <div class="project-card">
-                    <div class="project-image">
-                        <img src="" alt="">
-                        <div class="project-overlay"></div>
-                    </div>
-                    <div class="project-content">
-                        <h3 class="project-title">Nome do Projeto</h3>
-                        <p class="project-description">Descrição curta do projeto</p>
-                        <div class="project-tech">
-                            <span class="tech-tag"></span>
-                            <span class="tech-tag"></span>
-                            <span class="tech-tag"></span>
-                        </div>
-                        <div class="project-buttons">
-                            <a href="#" class="btn btn-primary btn-sm">
-                                Ver Projeto
-                            </a>
-                            <a href="#" class="btn-icon">
-                                <img src="./src/assets/img/symbole-github-azul.png" alt="">
-                            </a>
-                        </div>
-                    </div>
-                </div> -->
 
             </div>
         </div>
@@ -249,33 +202,33 @@
     <!-- Contact Section -->
     <section id="contact" class="contact">
         <div class="container">
-            <div class="section-header">
+            <div class="section-header reveal">
                 <h2 class="section-title">Vamos Trabalhar Juntos</h2>
                 <div class="section-divider"></div>
             </div>
 
-            <p class="contact-description">
+            <p class="contact-description reveal reveal-delay-1">
                 Pronto para dar vida às suas ideias? Entre em contato e vamos criar algo incrível juntos.
             </p>
 
             <div class="contact-grid">
-                <a href="https://wa.me/qr/XFFUWIC5QTIVC1" target="_blank" rel="noopener noreferrer" class="contact-card">
-                    <img src="./src/assets/img/whatsapp-icon.svg" alt="whatsApp icon">
+                <a href="https://wa.me/qr/XFFUWIC5QTIVC1" target="_blank" rel="noopener noreferrer" class="contact-card reveal reveal-delay-1">
+                    <img src="./src/assets/img/whatsapp-icon.svg" alt="WhatsApp">
                     <span class="contact-label">WhatsApp</span>
                 </a>
 
-                <a href="https://instagram.com/dferreira.dev" target="_blank" rel="noopener noreferrer" class="contact-card">
-                    <img src="./src/assets/img/instagram-icon.svg" alt="instagram icon">
+                <a href="https://instagram.com/dferreira.dev" target="_blank" rel="noopener noreferrer" class="contact-card reveal reveal-delay-2">
+                    <img src="./src/assets/img/instagram-icon.svg" alt="Instagram">
                     <span class="contact-label">Instagram</span>
                 </a>
 
-                <a href="https://www.tiktok.com/@dferreira.dev" target="_blank" rel="noopener noreferrer" class="contact-card">
-                    <img src="./src/assets/img/tiktok-icon.svg" alt="tiktok icon">
+                <a href="https://www.tiktok.com/@dferreira.dev" target="_blank" rel="noopener noreferrer" class="contact-card reveal reveal-delay-3">
+                    <img src="./src/assets/img/tiktok-icon.svg" alt="TikTok">
                     <span class="contact-label">TikTok</span>
                 </a>
 
-                <a href="mailto:davi2580vege@gmail.com" target="_blank" rel="noopener noreferrer" class="contact-card">
-                    <img src="./src/assets/img/email-icon.svg" alt="email icon">
+                <a href="mailto:davi2580vege@gmail.com" target="_blank" rel="noopener noreferrer" class="contact-card reveal reveal-delay-4">
+                    <img src="./src/assets/img/email-icon.svg" alt="E-mail">
                     <span class="contact-label">E-mail</span>
                 </a>
             </div>
