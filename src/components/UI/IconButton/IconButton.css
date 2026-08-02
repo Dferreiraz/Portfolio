@@ -1,0 +1,22 @@
+.btn-icon {
+  padding: 9px 14px;
+  background-color: transparent;
+  border: 1px solid var(--blue-accent);
+  color: var(--blue-accent);
+  border-radius: 8px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.btn-icon:hover {
+  background-color: var(--blue-accent);
+  color: #fff;
+}
+
+.btn-icon img {
+  display: block;
+}
