@@ -1,36 +1,37 @@
-<!-- PROJETO -->
-
-<h1 align="center">
-	💻🚀 Portfólio - Davi Ferreira 🚀💻
-</h1>
-
-<!-- ---------------------------------------------------------------------- -->
-
-<!-- MENU DE NAVEGAÇÃO -->
+# 💻🚀 Portfólio - Davi Ferreira 🚀💻
 
 <p align="center">
- <a href="#-descrição-do-entregável">Descrição do Entregável</a> •
- <a href="#-sobre-o-projeto">Sobre</a> •
- <a href="#-layout">Layout</a> •
- <a href="#-como-executar-o-projeto">Como executar</a> •
- <a href="#-tecnologias">Tecnologias</a> •
- <a href="#-funcionalidades">Funcionalidades</a> •
- <a href="#-como-contribuir">Como contribuir</a> •
- <a href="#-autor">Autor</a>
+  <a href="#-descrição-do-projeto">Descrição</a> •
+  <a href="#-sobre-o-projeto">Sobre</a> •
+  <a href="#-layout">Layout</a> •
+  <a href="#-tecnologias">Tecnologias</a> •
+  <a href="#-funcionalidades">Funcionalidades</a> •
+  <a href="#-deploy">Deploy</a> •
+  <a href="#-autor">Autor</a>
 </p>
 
-<!-- ---------------------------------------------------------------------- -->
+---
 
-## 📄 Descrição do Entregável
+## 📄 Descrição do projeto
 
-O projeto é composto pelos seguintes arquivos:
+Este repositório contém o código-fonte do meu portfólio pessoal, desenvolvido com **React** e **Vite**.
 
-- `index.html` (Página principal)
-- `README.md` (Documentação)
-- `src/`
-  - `assets/` (Imagens, ícones e arquivos estáticos)
-  - `styles/` (Folhas de estilo CSS)
-  - `scripts/` (Arquivos JavaScript)
+A estrutura do projeto segue a organização abaixo:
+
+```text
+portfolio/
+├── public/
+├── src/
+│   ├── assets/
+│   ├── components/
+│   ├── pages/
+│   ├── styles/
+│   ├── App.jsx
+│   └── main.jsx
+├── package.json
+├── vite.config.js
+└── README.md
+```
 
 ---
 
@@ -38,9 +39,9 @@ O projeto é composto pelos seguintes arquivos:
 
 Este é o meu portfólio pessoal como Desenvolvedor Front-End.
 
-O objetivo é apresentar minhas habilidades, projetos e experiências através de uma interface moderna, responsiva e intuitiva, servindo como vitrine profissional para recrutadores, clientes e empresas.
+O objetivo é apresentar minhas habilidades, projetos e experiências através de uma interface moderna, responsiva e intuitiva, servindo como vitrine profissional para recrutadores, empresas e clientes.
 
-Além de exibir meus trabalhos, o projeto demonstra boas práticas de desenvolvimento, organização de código e foco em experiência do usuário.
+Além de exibir meus trabalhos, o projeto demonstra boas práticas de desenvolvimento, organização de componentes, arquitetura de projetos React e foco na experiência do usuário.
 
 ---
 
@@ -49,107 +50,55 @@ Além de exibir meus trabalhos, o projeto demonstra boas práticas de desenvolvi
 > Adicione uma captura de tela atualizada do projeto.
 
 ```md
-![Preview do Portfólio](./src/assets/img/preview-portfolio.png)
+![Preview do Portfólio](./src/assets/preview-portfolio.png)
 ```
 
----
-
-## 🚀 Como executar o projeto
-
-### Clone o repositório
-
-```bash
-git clone https://github.com/dferreiraz/portfolio.git
-```
-
-### Entre na pasta
-
-```bash
-cd portfolio
-```
-
-### Execute
-
-Abra o arquivo `index.html` em seu navegador ou utilize a extensão **Live Server** do VS Code.
-
----
-
-### Pré-requisitos
-
-Antes de começar, você precisará ter instalado:
-
-- Um navegador atualizado (Google Chrome, Microsoft Edge, Firefox, etc.)
-- Visual Studio Code (recomendado)
-- Extensão **Live Server** (opcional)
 
 ---
 
 ## 🛠 Tecnologias
 
-As seguintes ferramentas foram utilizadas no projeto:
-
 ### Front-End
 
-- HTML5
-- CSS3
-- JavaScript
+* React
+* Vite
+* JavaScript (ES6+)
+* HTML5
+* CSS3
 
 ### Design
 
-- Figma
+* Figma
 
 ### Versionamento
 
-- Git
-- GitHub
+* Git
+* GitHub
 
 ---
 
 ## ✨ Funcionalidades
 
-- Landing Page moderna
-- Design responsivo
-- Seção Hero
-- Sobre mim
-- Projetos
-- Tecnologias
-- Contato
-- Links para redes sociais
-- Animações suaves
-- Interface otimizada para desktop e mobile
+* Landing Page moderna
+* Interface responsiva
+* Seção Hero
+* Sobre mim
+* Projetos
+* Tecnologias
+* Contato
+* Links para redes sociais
+* Animações suaves
+* Componentização com React
+* Navegação otimizada
+* Layout adaptado para desktop, tablet e mobile
 
 ---
 
-## 🌐 Acesse o projeto
+## 🌐 Deploy
 
-🔗 **GitHub Pages**
+O projeto está disponível em:
 
-https://dferreiraz.github.io/portfolio/
-
----
-
-## 💪 Como contribuir
-
-1. Faça um **Fork** do projeto.
-2. Crie uma branch para sua feature.
-
-```bash
-git checkout -b feature/minha-feature
-```
-
-3. Faça o commit.
-
-```bash
-git commit -m "feat: minha nova funcionalidade"
-```
-
-4. Envie para seu repositório.
-
-```bash
-git push origin feature/minha-feature
-```
-
-5. Abra um Pull Request.
+**🔗 https://dferreiradev.netlify.app**
 
 ---
 
@@ -157,17 +106,17 @@ git push origin feature/minha-feature
 
 ### Davi Ferreira
 
-- GitHub: https://github.com/dferreiraz
-- Portfólio: https://dferreiraz.github.io/portfolio/
-- Instagram: @dferreira.dev
-- LinkedIn: *(adicione seu perfil quando criar)*
+* GitHub: https://github.com/dferreiraz
+* Portfólio: https://dferreiradev.netlify.app
+* Instagram: https://instagram.com/dferreira.dev
+* LinkedIn: https://www.linkedin.com/in/davirobertoferreira/
 
 ---
 
 <div align="center">
 
-Feito com ❤️ por **Davi Ferreira**
+Desenvolvido com ❤️ por <strong>Davi Ferreira</strong>
 
-⭐ Se este projeto foi útil para você, considere deixar uma estrela no repositório.
+Se este projeto foi útil para você, considere deixar uma ⭐ no repositório.
 
 </div>
