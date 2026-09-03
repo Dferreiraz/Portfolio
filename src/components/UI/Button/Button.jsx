@@ -7,6 +7,7 @@ import './Button.css';
  * external: adiciona target="_blank" + rel="noopener noreferrer"
  * type: 'submit' (renderiza tag <button> nativa para formulários)
  */
+
 function Button({ href, onClick, variant = 'primary', size, external = false, type, children }) {
   const variantClass = `btn-${variant}`;
   const sizeClass = size ? `btn-${size}` : '';
