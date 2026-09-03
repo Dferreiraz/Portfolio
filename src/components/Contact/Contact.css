@@ -1,72 +1,176 @@
 .contact {
   padding: 96px 24px;
+  background-color: var(--bg-secondary);
 }
 
-.contact .container {
-  max-width: 800px;
+.contact-subtitle {
   text-align: center;
-}
-
-.contact-description {
   color: var(--text-secondary);
-  font-size: clamp(15px, 2vw, 18px);
-  margin: 0 auto 48px;
-  max-width: 560px;
+  font-size: 18px;
+  margin: 0 auto 64px;
+  max-width: 600px;
 }
 
-.contact-grid {
+/* Layout em 2 colunas no desktop */
+.contact-layout {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 16px;
-  max-width: 480px;
+  grid-template-columns: 1fr;
+  gap: 48px;
+  max-width: 1000px;
   margin: 0 auto;
 }
 
-@media (min-width: 480px) {
-  .contact-grid {
-    grid-template-columns: repeat(4, 1fr);
-    max-width: 600px;
+@media (min-width: 900px) {
+  .contact-layout {
+    grid-template-columns: 1fr 1.2fr;
+    align-items: start;
   }
 }
 
-.contact-card {
-  padding: 24px 16px;
-  background-color: var(--bg-card);
-  border-radius: 12px;
-  border: 1px solid var(--border-color);
+/* --- Lado Esquerdo: Cards de Informação --- */
+.contact-info {
   display: flex;
   flex-direction: column;
+  gap: 20px;
+}
+
+.info-card {
+  display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 20px;
+  padding: 24px;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 12px;
   text-decoration: none;
-  transition: border-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+  transition: all 0.3s ease;
 }
 
-.contact-card:hover {
+.info-card:hover {
   border-color: var(--blue-accent);
-  transform: translateY(-6px);
-  box-shadow: 0 8px 30px rgba(59, 130, 246, 0.15);
+  transform: translateX(8px);
 }
 
-.contact-card img {
-  width: 28px;
-  height: 28px;
+/* SOLUÇÃO PARA ÍCONES INVISÍVEIS: Fundo azul translúcido */
+.icon-wrapper {
+  width: 52px;
+  height: 52px;
+  min-width: 52px;
+  background-color: rgba(59, 130, 246, 0.1);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.3s ease;
+}
+
+.info-card:hover .icon-wrapper {
+  background-color: rgba(59, 130, 246, 0.2);
+}
+
+.icon-wrapper img {
+  width: 26px;
+  height: 26px;
   object-fit: contain;
 }
 
-.contact-label {
-  font-size: 13px;
+.info-text {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.info-label {
+  font-size: 14px;
   font-weight: 500;
-  color: var(--text-secondary);
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.info-value {
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--text-primary);
   transition: color 0.3s ease;
 }
 
-.contact-card:hover .contact-label {
+.info-card:hover .info-value {
   color: var(--blue-accent);
 }
 
+/* --- Lado Direito: Formulário --- */
+.contact-form-wrapper {
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 12px;
+  padding: 32px;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.form-group label {
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--text-primary);
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 14px 16px;
+  background-color: var(--bg-secondary);
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  color: var(--text-primary);
+  font-size: 15px;
+  font-family: var(--font-primary);
+  outline: none;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+  color: var(--text-muted);
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  border-color: var(--blue-accent);
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+}
+
+.form-group textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
+.submit-btn {
+  width: 100%;
+  margin-top: 8px;
+}
+
+/* Responsivo */
 @media (max-width: 480px) {
   .contact {
     padding: 64px 20px;
+  }
+
+  .contact-form-wrapper {
+    padding: 24px;
+  }
+
+  .info-card {
+    padding: 20px;
   }
 }
