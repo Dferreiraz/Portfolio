@@ -1,6 +1,6 @@
 import Reveal from '../UI/Reveal/Reveal';
 import SectionHeader from '../UI/SectionHeader/SectionHeader';
-import Skills from '../Skills/Skills';
+import { SkillsProgress, SkillsCards } from '../Skills/Skills';
 import './About.css';
 
 function About() {
@@ -9,7 +9,8 @@ function About() {
       <div className="container">
         <SectionHeader title="Sobre Mim" />
 
-        <div className="about-grid">
+        {/* Linha 1: Texto (esquerda) + Barras (direita) */}
+        <div className="about-top">
           <Reveal delay={1} className="about-text">
             <p>
               Sou um desenvolvedor front-end apaixonado, focado em criar experiências digitais excepcionais.
@@ -22,8 +23,15 @@ function About() {
             </p>
           </Reveal>
 
-          <Skills />
+          <Reveal delay={2} className="about-progress">
+            <SkillsProgress />
+          </Reveal>
         </div>
+
+        {/* Linha 2: 4 Cards ocupando toda a largura */}
+        <Reveal delay={3} className="about-cards-section">
+          <SkillsCards />
+        </Reveal>
       </div>
     </section>
   );

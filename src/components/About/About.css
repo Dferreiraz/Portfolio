@@ -2,17 +2,18 @@
   padding: 96px 24px;
 }
 
-.about-grid {
+/* Linha 1: Grid de 2 colunas */
+.about-top {
   display: grid;
   grid-template-columns: 1fr;
   gap: 48px;
   align-items: start;
 }
 
-@media (min-width: 768px) {
-  .about-grid {
+@media (min-width: 900px) {
+  .about-top {
     grid-template-columns: 1fr 1fr;
-    align-items: center;
+    gap: 64px;
   }
 }
 
@@ -27,8 +28,17 @@
   margin-bottom: 0;
 }
 
+/* Linha 2: 4 cards com gap maior em cima */
+.about-cards-section {
+  margin-top: 64px;
+}
+
 @media (max-width: 480px) {
   .about {
     padding: 64px 20px;
+  }
+
+  .about-cards-section {
+    margin-top: 48px;
   }
 }

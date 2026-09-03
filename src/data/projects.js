@@ -1,13 +1,14 @@
 import agencyWebImg from '../assets/images/AgencyWeb.png';
 import techSolutionsImg from '../assets/images/TechSolutions.png';
 import performaImg from '../assets/images/Performa.png';
+// import projeto4Img from '../assets/images/projeto4.png';
+// import projeto5Img from '../assets/images/projeto5.png';
 
 export const projects = [
   {
     id: 1,
     title: 'AgencyWeb',
-    description:
-      'Projeto institucional desenvolvido durante os estudos no curso de Desenvolvedor Front-End do Senai Suíço-Brasileiro, com foco em responsividade e estrutura profissional.',
+    description: 'Projeto institucional desenvolvido durante os estudos no curso de Desenvolvedor Front-End do Senai Suíço-Brasileiro, com foco em responsividade e estrutura profissional.',
     image: agencyWebImg,
     tech: ['HTML', 'CSS'],
     demoUrl: 'https://dferreiraz.github.io/AgencyWeb/',
@@ -16,8 +17,7 @@ export const projects = [
   {
     id: 2,
     title: 'TechSolutions',
-    description:
-      'Projeto institucional desenvolvido para empresa de assistência técnica, com foco em presença digital, design moderno, responsividade e experiência do usuário.',
+    description: 'Projeto institucional desenvolvido para empresa de assistência técnica, com foco em presença digital, design moderno, responsividade e experiência do usuário.',
     image: techSolutionsImg,
     tech: ['HTML', 'CSS', 'JavaScript'],
     demoUrl: 'https://dferreiraz.github.io/TechSolutions/',
@@ -26,11 +26,20 @@ export const projects = [
   {
     id: 3,
     title: 'Performa',
-    description:
-      'Projeto institucional desenvolvido para empresa do segmento automotivo, focado em apresentação profissional, identidade visual moderna e responsividade.',
+    description: 'Projeto institucional desenvolvido para empresa do segmento automotivo, focado em apresentação profissional, identidade visual moderna e responsividade.',
     image: performaImg,
     tech: ['HTML', 'CSS', 'JavaScript'],
     demoUrl: 'https://dferreiraz.github.io/PerformaParabrisas/',
     githubUrl: 'https://github.com/Dferreiraz/PerformaParabrisas',
   },
+  // Adicione mais projetos aqui quando tiver
+  // {
+  //   id: 4,
+  //   title: 'Nome do Projeto',
+  //   description: 'Descrição do projeto...',
+  //   image: projeto4Img,
+  //   tech: ['HTML', 'CSS', 'JavaScript', 'React'],
+  //   demoUrl: 'https://...',
+  //   githubUrl: 'https://github.com/...',
+  // },
 ];
