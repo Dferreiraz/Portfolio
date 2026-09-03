@@ -23,22 +23,20 @@ function Contact() {
   const handleSubmit = (e) => {
     e.preventDefault(); // Impede o recarregamento da página
 
-    // Monta a mensagem com quebras de linha reais (\n)
+    // 1. Monta a mensagem com quebras de linha
     const text = `Olá, Davi! Vim pelo seu portfólio.\n\n` +
                  `*Nome:* ${formData.name}\n` +
                  `*E-mail:* ${formData.email}\n` +
                  `*Mensagem:* ${formData.message}`;
 
-    // Seu número corrigido (55 + 11 + número, apenas dígitos)
-    const phoneNumber = '5511910519200';
+    // 2. Link base exato + texto codificado
+    const baseUrl = 'https://wa.me/5511910519200';
+    const whatsappUrl = `${baseUrl}?text=${encodeURIComponent(text)}`;
     
-    // Codifica a URL corretamente para evitar erros de formatação
-    const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(text)}`;
-    
-    // Abre o WhatsApp (funciona melhor que window.open em alguns navegadores)
+    // 3. Abre o WhatsApp em nova aba
     window.open(whatsappUrl, '_blank');
 
-    // Limpa o formulário após o envio
+    // 4. Limpa o formulário após o envio
     setFormData({ name: '', email: '', message: '' });
   };
 
@@ -49,7 +47,7 @@ function Contact() {
         
         <Reveal delay={1} className="contact-subtitle">
           <p>
-            Pronto para dar vida às suas ideias? Preencha o formulário ou me chame diretamente nas redes.
+            Pronto para dar vida às suas ideias? Preencha o formulário abaixo ou me chame diretamente.
           </p>
         </Reveal>
 
@@ -75,9 +73,8 @@ function Contact() {
             ))}
           </Reveal>
 
-          {/* Lado Direito: Formulário para WhatsApp */}
+          {/* Lado Direito: Formulário */}
           <Reveal delay={3} className="contact-form-wrapper">
-            {/* IMPORTANTE: onSubmit={handleSubmit} é o que dispara a função */}
             <form className="contact-form" onSubmit={handleSubmit}>
               <div className="form-group">
                 <label htmlFor="name">Nome completo</label>
@@ -118,6 +115,7 @@ function Contact() {
                 ></textarea>
               </div>
 
+              {/* AGORA FUNCIONA: O Button renderiza um <button type="submit"> real */}
               <Button type="submit" variant="primary" className="submit-btn">
                 Enviar pelo WhatsApp
               </Button>
