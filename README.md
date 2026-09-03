@@ -174,27 +174,17 @@ O projeto está publicado e disponível online através da **Netlify**:
 
 **🔗 https://dferreiradev.netlify.app**
 
----
-
+<!-- MODELO DE AUTOR-->
 ## 🦸 Autor
 
-### Davi Ferreira
-
-Desenvolvedor Front-End focado em criar interfaces modernas, responsivas e funcionais, enquanto continuo evoluindo meus conhecimentos em desenvolvimento web e Back-End.
-
-- **GitHub:** https://github.com/Dferreiraz
-- **Portfólio:** https://dferreiradev.netlify.app
-- **Instagram:** https://instagram.com/dferreira.dev
-- **LinkedIn:** https://www.linkedin.com/in/davirobertoferreira/
+<a href="https://www.linkedin.com/in/davirobertoferreira/">
+Davi Ferreira</a>
+ <br />
+ 
+[![Gmail Badge](https://img.shields.io/badge/-davi2580vege@gmail.com-c14438?style=flat-square&logo=Gmail&logoColor=white&link=mailto:davi2580vege@gmail.com)](mailto:davi2580@gmail.com)
 
 ---
 
-<div align="center">
+<!-- ---------------------------------------------------------------------- -->
 
-### 🚀 Desenvolvido por Davi Ferreira
-
-Feito com **React, JavaScript e CSS** ❤️
-
-**Obrigado por visitar meu portfólio!** 👋🏽
-
-</div>
+Feito por Davi Ferreira👋🏽 [Entre em contato!](https://www.linkedin.com/in/davirobertoferreira/)
